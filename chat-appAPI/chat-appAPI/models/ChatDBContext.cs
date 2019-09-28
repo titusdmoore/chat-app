@@ -13,7 +13,7 @@ namespace chat_appAPI.models {
             modelBuilder.Entity<User>()
                 .HasIndex(u => u.DisplayName)
                 .IsUnique();
-        }
+        } 
 
         public ChatDBContext(DbContextOptions options) : base(options) {
 
