@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 namespace chat_appAPI.models {
     public class ChatDBContext : DbContext {
         public DbSet<User> User { get; set; }
+        public DbSet<Message> Message { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder) {
             // Set User Display Name to unique
