@@ -94,7 +94,7 @@ namespace chat_appAPI.Controllers
             {
                 return NotFound();
             }
-
+             
             _context.User.Remove(user);
             await _context.SaveChangesAsync();
 
